@@ -3,9 +3,9 @@ package tendermint.types;
 
 option go_package = "github.com/tendermint/tendermint/proto/tendermint/types";
 
-import "Protos/gogoproto/gogo.proto";
-import "Protos/tendermint/types/types.proto";
-import "Protos/tendermint/types/evidence.proto";
+import "gogoproto/gogo.proto";
+import "tendermint/types/types.proto";
+import "tendermint/types/evidence.proto";
 
 message Block {
   Header                        header      = 1 [(gogoproto.nullable) = false];

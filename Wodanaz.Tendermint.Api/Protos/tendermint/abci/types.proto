@@ -5,12 +5,12 @@ option go_package = "github.com/tendermint/tendermint/abci/types";
 
 // For more information on gogo.proto, see:
 // https://github.com/cosmos/gogoproto/blob/master/extensions.md
-import "Protos/tendermint/crypto/proof.proto";
-import "Protos/tendermint/types/types.proto";
-import "Protos/tendermint/crypto/keys.proto";
-import "Protos/tendermint/types/params.proto";
-import "Protos/google/protobuf/timestamp.proto";
-import "Protos/gogoproto/gogo.proto";
+import "tendermint/crypto/proof.proto";
+import "tendermint/types/types.proto";
+import "tendermint/crypto/keys.proto";
+import "tendermint/types/params.proto";
+import "google/protobuf/timestamp.proto";
+import "gogoproto/gogo.proto";
 
 // This file is copied from http://github.com/tendermint/abci
 // NOTE: When using custom types, mind the warnings.

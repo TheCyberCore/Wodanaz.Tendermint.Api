@@ -3,8 +3,8 @@ package tendermint.p2p;
 
 option go_package = "github.com/tendermint/tendermint/proto/tendermint/p2p";
 
-import "Protos/gogoproto/gogo.proto";
-import "Protos/tendermint/crypto/keys.proto";
+import "gogoproto/gogo.proto";
+import "tendermint/crypto/keys.proto";
 
 message PacketPing {}
 

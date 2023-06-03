@@ -1,9 +1,9 @@
 syntax = "proto3";
 package tendermint.privval;
 
-import "Protos/tendermint/crypto/keys.proto";
-import "Protos/tendermint/types/types.proto";
-import "Protos/gogoproto/gogo.proto";
+import "tendermint/crypto/keys.proto";
+import "tendermint/types/types.proto";
+import "gogoproto/gogo.proto";
 
 option go_package = "github.com/tendermint/tendermint/proto/tendermint/privval";
 

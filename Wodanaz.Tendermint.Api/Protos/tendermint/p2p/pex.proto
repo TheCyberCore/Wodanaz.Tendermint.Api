@@ -3,8 +3,8 @@ package tendermint.p2p;
 
 option go_package = "github.com/tendermint/tendermint/proto/tendermint/p2p";
 
-import "Protos/tendermint/p2p/types.proto";
-import "Protos/gogoproto/gogo.proto";
+import "tendermint/p2p/types.proto";
+import "gogoproto/gogo.proto";
 
 message PexRequest {}
 

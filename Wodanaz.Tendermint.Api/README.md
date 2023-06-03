@@ -55,3 +55,18 @@ tendermint node --abci grpc --proxy_app 127.0.0.1:5001
 ```
 
 Note that .NET 6.0 by default publishes the gRPC endpoints on port 5000 (http) and 5001 (https). If you use different ports change the command accordingly.
+In my tests, Tendermint was not able to do TLS handshakes with a .NET core HTTPS endpoint properly. This means that you have to restrict Kestrel to Http2 only connections. I managed to establish a connection between Tendermint and the C# app using the following Kestrel configuration.
+
+```
+{
+  "AllowedHosts": "*",
+  "Kestrel": {
+    "Endpoints": {
+      "gRPC": {
+        "Protocols": "Http2",
+        "Url": "http://127.0.0.1:5000"
+      }
+    }
+  }
+}
+```

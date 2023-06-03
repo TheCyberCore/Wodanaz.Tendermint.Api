@@ -4,7 +4,7 @@
     <TargetFrameworks>net6.0;net7.0;</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-		<Version>0.10.2</Version>
+		<Version>0.10.3</Version>
     <Title>Tendermint Grpc Api</Title>
     <Authors>TCCX</Authors>
     <Product>Wodanaz</Product>
@@ -17,54 +17,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="grpcui_example_echo.png" />
-    <None Remove="LICENSE.txt" />
-    <None Remove="Protos\gogoproto\gogo.proto" />
-    <None Remove="Protos\google\protobuf\any.proto" />
-    <None Remove="Protos\google\protobuf\api.proto" />
-    <None Remove="Protos\google\protobuf\descriptor.proto" />
-    <None Remove="Protos\google\protobuf\duration.proto" />
-    <None Remove="Protos\google\protobuf\empty.proto" />
-    <None Remove="Protos\google\protobuf\field_mask.proto" />
-    <None Remove="Protos\google\protobuf\source_context.proto" />
-    <None Remove="Protos\google\protobuf\struct.proto" />
-    <None Remove="Protos\google\protobuf\timestamp.proto" />
-    <None Remove="Protos\google\protobuf\type.proto" />
-    <None Remove="Protos\google\protobuf\wrappers.proto" />
-    <None Remove="Protos\tendermint\abci\types.proto" />
-    <None Remove="Protos\tendermint\blocksync\types.proto" />
-    <None Remove="Protos\tendermint\consensus\types.proto" />
-    <None Remove="Protos\tendermint\consensus\wal.proto" />
-    <None Remove="Protos\tendermint\crypto\keys.proto" />
-    <None Remove="Protos\tendermint\crypto\proof.proto" />
-    <None Remove="Protos\tendermint\libs\bits\types.proto" />
-    <None Remove="Protos\tendermint\mempool\types.proto" />
-    <None Remove="Protos\tendermint\p2p\conn.proto" />
-    <None Remove="Protos\tendermint\p2p\pex.proto" />
-    <None Remove="Protos\tendermint\p2p\types.proto" />
-    <None Remove="Protos\tendermint\privval\types.proto" />
-    <None Remove="Protos\tendermint\rpc\grpc\types.proto" />
-    <None Remove="Protos\tendermint\statesync\types.proto" />
-    <None Remove="Protos\tendermint\state\types.proto" />
-    <None Remove="Protos\tendermint\store\types.proto" />
-    <None Remove="Protos\tendermint\types\block.proto" />
-    <None Remove="Protos\tendermint\types\canonical.proto" />
-    <None Remove="Protos\tendermint\types\events.proto" />
-    <None Remove="Protos\tendermint\types\evidence.proto" />
-    <None Remove="Protos\tendermint\types\params.proto" />
-    <None Remove="Protos\tendermint\types\types.proto" />
-    <None Remove="Protos\tendermint\types\validator.proto" />
-    <None Remove="Protos\tendermint\version\types.proto" />
-    <None Remove="README.md" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="grpcui_example_echo.png" />
     <EmbeddedResource Include="LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </EmbeddedResource>
-    <Protobuf Include="Protos\tendermint\abci\types.proto" />
     <EmbeddedResource Include="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -81,41 +38,32 @@
   </ItemGroup>
 	
   <ItemGroup>
-    <Protobuf Include="Protos\gogoproto\gogo.proto" />
-    <Protobuf Include="Protos\google\protobuf\any.proto" />
-    <Protobuf Include="Protos\google\protobuf\api.proto" />
-    <Protobuf Include="Protos\google\protobuf\descriptor.proto" />
-    <Protobuf Include="Protos\google\protobuf\duration.proto" />
-    <Protobuf Include="Protos\google\protobuf\empty.proto" />
-    <Protobuf Include="Protos\google\protobuf\field_mask.proto" />
-    <Protobuf Include="Protos\google\protobuf\source_context.proto" />
-    <Protobuf Include="Protos\google\protobuf\struct.proto" />
-    <Protobuf Include="Protos\google\protobuf\timestamp.proto" />
-    <Protobuf Include="Protos\google\protobuf\type.proto" />
-    <Protobuf Include="Protos\google\protobuf\wrappers.proto" />
-    <Protobuf Include="Protos\tendermint\blocksync\types.proto" />
-    <Protobuf Include="Protos\tendermint\consensus\types.proto" />
-    <Protobuf Include="Protos\tendermint\consensus\wal.proto" />
-    <Protobuf Include="Protos\tendermint\crypto\keys.proto" />
-    <Protobuf Include="Protos\tendermint\crypto\proof.proto" />
-    <Protobuf Include="Protos\tendermint\libs\bits\types.proto" />
-    <Protobuf Include="Protos\tendermint\mempool\types.proto" />
-    <Protobuf Include="Protos\tendermint\p2p\conn.proto" />
-    <Protobuf Include="Protos\tendermint\p2p\pex.proto" />
-    <Protobuf Include="Protos\tendermint\p2p\types.proto" />
-    <Protobuf Include="Protos\tendermint\privval\types.proto" />
-    <Protobuf Include="Protos\tendermint\rpc\grpc\types.proto" />
-    <Protobuf Include="Protos\tendermint\statesync\types.proto" />
-    <Protobuf Include="Protos\tendermint\state\types.proto" />
-    <Protobuf Include="Protos\tendermint\store\types.proto" />
-    <Protobuf Include="Protos\tendermint\types\block.proto" />
-    <Protobuf Include="Protos\tendermint\types\canonical.proto" />
-    <Protobuf Include="Protos\tendermint\types\events.proto" />
-    <Protobuf Include="Protos\tendermint\types\evidence.proto" />
-    <Protobuf Include="Protos\tendermint\types\params.proto" />
-    <Protobuf Include="Protos\tendermint\types\types.proto" />
-    <Protobuf Include="Protos\tendermint\types\validator.proto" />
-    <Protobuf Include="Protos\tendermint\version\types.proto" />
-  </ItemGroup>
+		<Protobuf Include="Protos\gogoproto\gogo.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\abci\types.proto" ProtoRoot="Protos" Access="Public"/>
+		<Protobuf Include="Protos\tendermint\blocksync\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\consensus\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\consensus\wal.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\crypto\keys.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\crypto\proof.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\libs\bits\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\mempool\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\p2p\conn.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\p2p\pex.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\p2p\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\privval\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\rpc\grpc\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\statesync\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\state\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\store\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\types\block.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\types\canonical.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\types\events.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\types\evidence.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\types\params.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\types\types.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\types\validator.proto" ProtoRoot="Protos" Access="Public" />
+		<Protobuf Include="Protos\tendermint\version\types.proto" ProtoRoot="Protos" Access="Public" />
+	</ItemGroup>
+	
 
 </Project>

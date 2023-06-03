@@ -3,13 +3,13 @@ package tendermint.state;
 
 option go_package = "github.com/tendermint/tendermint/proto/tendermint/state";
 
-import "Protos/gogoproto/gogo.proto";
-import "Protos/tendermint/abci/types.proto";
-import "Protos/tendermint/types/types.proto";
-import "Protos/tendermint/types/validator.proto";
-import "Protos/tendermint/types/params.proto";
-import "Protos/tendermint/version/types.proto";
-import "Protos/google/protobuf/timestamp.proto";
+import "gogoproto/gogo.proto";
+import "tendermint/abci/types.proto";
+import "tendermint/types/types.proto";
+import "tendermint/types/validator.proto";
+import "tendermint/types/params.proto";
+import "tendermint/version/types.proto";
+import "google/protobuf/timestamp.proto";
 
 // ABCIResponses retains the responses
 // of the various ABCI calls during block processing.
